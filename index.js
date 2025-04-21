@@ -25,7 +25,7 @@ function showSlide(index) {
     });
 }
 
-function prevSlide() {
+function prevSlide()  {
     showSlide(currentSlide - 1);
 }
 
@@ -37,15 +37,6 @@ function nextSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
 });
-
-function prevSlide() {
-    showSlide(currentSlide - 1);
-}
-
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
-
 
 let currentImage = 1;
 function Change_pictures(){
