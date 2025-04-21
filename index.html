@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug.Log(cat)</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav id="導覽列" class="navbar">
+    <a class="LOGO" href="#home"><img src="img/LOGO-Game-03-02.png" alt="網站 LOGO"/></a>
+    <a href="#about">團隊資訊</a>
+    <a href="#GameInformation">遊戲資訊</a>
+</nav>
+
+<!-- 各區塊 -->
+<section id="home">
+    <div class= "homeLogo"><div class="homelogoimg"> <img src="img/LOGO.png" alt="首頁LOGO"></div>
+        <div id="homedown">
+        <div class="scroll-button">
+            <a href="#about">
+                <i class="icon-arrow-down">▼</i>
+              </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="section-padding">
+    <div class="abouth2">
+        <h2>團隊資訊</h2>
+    </div>
+    <div class="關於團隊">
+        <h4>關於團隊</h4><br>
+        <p>無限迴圈是特色 不是 bug<br>
+            只要跑得動 就不是問題<br>
+            Ctrl+C Ctrl+V<br>
+            Debug.Error : 腦袋過載</p>
+    </div>
+    <hr>
+    <div class="成員介紹"><h4>團隊成員介紹</h4>
+        <div class="成員介紹區">
+           <div class="成員卡2"> <img src="img/圖層%2025.png" alt="xue" />
+           <p>薛格</p>
+               <p>程式<br>美術<br>還有這個網頁~</p></div>
+            <div class="成員卡2"> <img src="img/圖層%2029.png" alt="琪"/>
+                <p>勛宇</p><p>企劃<br>UI設計</p></div>
+                <div class="成員卡1"><img src="img/圖層%2028.png" alt="蓁"/>
+                    <p>阿蓁</p><p>聲音設計<br>meme大師</p></div>
+                    <div class="成員卡1"><img src="img/圖層%2027.png" alt="汪">
+                        <p>汪汪</p><p>程式<br>美術<br>精神支柱</p></div>
+                        <div class="成員卡2"><img src="img/圖層%2026.png" alt="老大"/>
+                            <p>老大</p><p>程式<br>流程圖達人<br></p></div>
+        </div>
+    </div>
+</section>
+<section id="GameInformation"><h2>遊戲資訊</h2><hr style="margin-bottom:50px;">
+<div class="遊戲文">
+    <div class="遊戲圖">
+        <button class="遊戲圖按鈕" onclick="Change_pictures()"></button>
+        <img id="gameImage" src="img/IMG_2182.png" alt="遊戲概念圖"/></div>
+    <div class="遊戲介紹">
+        <p>玩家將扮演一隻被迫工作的實驗生物──貓貓蟲。
+<br>牠被困在實驗設施中，成為實驗人員的血汗勞工，被強迫完成各種勞動任務。
+<br>運送與填裝藥劑、收集與傳送文件與清洗與回收器皿 據說只要完成績效，就能「回家」。
+<br>貓貓蟲一心只想躺在柔軟的小被被上好好休息，於是拼命工作。
+<br>然而，只要發生任何失誤，就會被扣減績效分數。
+<br>如果績效不斷下滑，後果將不堪設想……貓貓蟲的結局，將由玩家的表現來決定。</p>
+    </div>
+</div>
+</section>
+<section id="遊玩解說">
+    <div class="button-row">
+    <button class="arrow_left" onclick="prevSlide()"> < </button>
+    <button class="arrow_right" onclick="nextSlide()"> > </button>
+    </div>
+<div class="解說文字">
+    <div class="carousel-slide">
+        <p class="caption">資料傳輸區域<br>玩家在此拉扯信件並傳輸資料</p>
+        <p class="caption">兩位玩家合作<br>一會玩家黏住紙張 一位玩家拉扯另一位玩家</p>
+        <p class="caption">玩家合作傳輸資料<br>兩位玩家勾住彼此的尾巴</p>
+        <p class="caption">將自己變成電線傳輸資料</p>
+    </div>
+</div><hr style="background-color: rgb(118,109,142); ">
+    <div class="解說圖片">
+        <div class="carousel-slide">
+            <img src="img/IMG_2132.png" alt="傳輸區">
+            <img src="img/IMG_2134.png" alt="拉扯信件">
+            <img src="img/IMG_2136.png" alt="勾住">
+            <img src="img/IMG_2137.png" alt="傳輸資料">
+        </div>
+    </div>
+
+</section>
+<footer id="footer">
+    <div class="container text-center">
+        <span class="alo">無限迴圈 infinite loop | 學生開發專案</span><br>
+        <span class="copyright">
+            ◎
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            Infinite Loop Project. All rights reserved. Powered by LTU DCD
+        </span>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

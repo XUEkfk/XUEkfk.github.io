@@ -1,0 +1,365 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  Microsoft JhengHei, sans-serif;
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    width: 30%;
+}
+h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav {
+    transition: all 0.3s ease;
+}
+
+nav a {
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.navbar {
+    position:fixed;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(84, 61, 129, 0);
+    font-size: 20px;
+    height: 100px;
+    z-index: 99;
+}
+.navbar a{
+    color: black;
+}
+
+.navaft{
+    position:fixed;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(84, 61, 129, 0.62);
+    font-size: 20px;
+    height: 50px;
+    z-index: 99;
+}
+.navaft a{
+    color: white;
+}
+
+nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.LOGO{
+    padding-top: 10px;
+}
+.LOGO>img{
+    height: 50px;
+}
+.section-padding{
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.homelogoimg {
+    transition: transform 1s ease, opacity 1s ease;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.homelogoimg.shrink {
+    transform: scale(0.5);  /* 縮小比例 */
+    opacity: 0.7;           /* 同時降低透明度 */
+}
+
+.homelogoimg img{
+    height: 600px;
+    width: auto;
+}
+
+
+.abouth2 {
+    margin: 0;
+    background-color: rgb(44, 44, 62);
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.關於團隊{
+    background-color: rgb(44, 44, 62);
+    padding: 20px;
+}
+.關於團隊 h4{
+    margin: 0 0 10px 0;
+}
+.成員介紹區{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+/* 成員卡片樣式統一 */
+.成員卡1, .成員卡2 {
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.成員卡1 img {
+    width: 64%;
+    height: auto;
+}
+.成員卡2 img{
+    width: 50%;
+    height: auto;
+}
+.遊戲文{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.遊戲圖 {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    overflow: hidden; /* 裁切超出容器部分 */
+    border-radius: 20px; /* 可選：讓遮罩更有圓角感 */
+    border: 5px solid #515171;
+    transition: transform 0.3s ease,opacity 0.3s ease;
+    z-index: 1;
+}
+.遊戲圖按鈕{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background-color: transparent; /* 背景透明 */
+    border: none;                  /* 去除邊框 */
+    color: transparent;            /* 文字透明 */
+    cursor: pointer;               /* 滑鼠變成點擊手勢 */
+    z-index: 2;
+}
+
+.遊戲圖:hover {
+    border: 5px solid #e5e5ff;
+    transform: scale(1.05);
+}
+.遊戲介紹{
+    height: 500px;
+    width: 700px ;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.遊戲介紹 p{
+    color: white;
+    font-size: 17px;
+    line-height: 2;
+    max-height: 400px;
+}
+
+.遊戲圖 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* 保持比例裁切填滿容器 */
+}
+.解說文字{
+    color: white;
+    font-size: 30px;
+    height: 400px;
+    width:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* 可選：讓遮罩更有圓角感 */
+    background-color: rgba(118, 109, 142, 0.7);
+}
+.解說圖片{
+    height: 400px;
+    width:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* 可選：讓遮罩更有圓角感 */
+    background-color: rgba(118, 109, 142, 0.7);
+}
+.button-row button{
+    color: rgba(255, 255, 255, 0.51);
+    font-size: 70px;
+    background-color: transparent; /* 背景透明 */
+    border: none;                  /* 去除邊框 */
+    cursor: pointer;               /* 滑鼠變成點擊手勢 */
+}
+
+.caption{
+    text-align: center;
+}
+.carousel-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 370px;
+    width: auto;
+}
+.carousel-slide img{
+    width: auto;
+    height: 100%;
+}
+.text-center {
+    text-align: center;
+    font-size: 10px;
+}
+.scroll-button {
+    transform: translate(-50%);
+    animation: fedIup 1s ease-out normal forwards;
+    opacity: 0;
+    font-size:50px;
+}
+.scroll-button a {
+    text-decoration: none;   /* 去底線 */
+    transition: transform 0.3s ease;
+}
+.scroll-button i{
+    color: white;
+    font-style: normal;
+}
+@keyframes fedIup {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px); /* 加入滑入效果 */
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes arrowBounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* 各區塊樣式 */
+section {
+    height: 100vh; /* 每個區塊佔滿整個畫面 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#home {
+    background-image: url(img/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left top;
+    box-sizing: border-box;
+}
+#homedown{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    animation: arrowBounce 2s linear infinite;
+}
+
+#about {
+    margin-top: auto;
+    height: 1048px;
+    width: 100%;
+    text-align: center;
+    background: #2c2c3e;
+    color: white;}
+#about p {
+    font-size: 18px;
+}
+#GameInformation {
+    color: #ffffff;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(44, 44, 62); /* 可選：作為備用背景 */
+}
+#GameInformation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("img/IMG_2182.png");
+    background-size: cover;
+    background-position: center;
+    opacity:0.5; /* 控制透明度 */
+    filter: brightness(0.5) blur(2px);
+    z-index: 0;
+}
+
+/* 讓內容在背景圖上方 */
+#GameInformation > * {
+    position: relative;
+    z-index: 1;
+}
+#遊玩解說 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* 垂直置中內容 */
+    align-items: center;        /* 水平置中內容 */
+    background-color: rgb(44, 44, 62);
+    height: 100vh;
+}
+
+#遊玩解說 .button-row {
+    display: flex;
+    position: absolute;
+    justify-content: space-between; /* 左右對齊 */
+    align-items: center;            /* 垂直置中按鈕內容 */
+    width: 80%;
+    height: 100%;
+}
+
+#遊玩解說 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 24px;
+    z-index: 5;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px 0;
+    background-color: rgb(34, 34, 53);
+}
