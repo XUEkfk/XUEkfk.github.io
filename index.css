@@ -363,3 +363,68 @@ section {
     padding: 50px 0;
     background-color: rgb(34, 34, 53);
 }
+/* 平板：720px～1024px */
+@media screen and (max-width: 1024px) and (min-width: 720px) {
+    .遊戲文 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .遊戲圖, .遊戲介紹 {
+        width: 90%;
+        height: auto;
+    }
+    .解說圖片, .解說文字 {
+        width: 90%;
+        height: auto;
+        font-size: 24px;
+    }
+    .scroll-button {
+        font-size: 40px;
+    }
+}
+
+/* 手機：小於720px */
+@media screen and (max-width: 719px) {
+    .navbar, .navaft {
+        width: 100vw;
+        flex-direction: row-reverse;
+        height: auto;
+        font-size: 10px;
+    }
+    .navbar a, .navaft a {
+        margin: 0 0;
+        padding: 5px;
+    }
+    .LOGO{
+        padding-top: 0px;
+    }
+    .LOGO>img{
+        height: 15px;
+    }
+
+    .遊戲文 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .遊戲圖, .遊戲介紹 {
+        width: 100%;
+        height: auto;
+    }
+    .解說圖片, .解說文字 {
+        width: 95%;
+        font-size: 18px;
+        padding: 10px;
+        height: auto;
+    }
+    .homelogoimg img {
+        height: auto;
+        width: 100%;
+    }
+    .成員介紹區 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .scroll-button {
+        font-size: 30px;
+    }
+}
