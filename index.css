@@ -244,6 +244,47 @@ nav a {
     color: white;
     font-style: normal;
 }
+.圖文排列{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.圖文排列2{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 100px;
+}
+.美術圖{
+    position: relative;
+    height: 700px;
+    width: 700px;
+    background: rgba(90, 26, 26, 0);
+    border-radius: 20px;
+    transition: transform 0.5s ease-out, z-index 0.7s ease-in;
+    z-index: 0;
+}
+
+.美術圖 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.美術圖:hover {
+    transform: scale(1.2); /* 放大 */
+    z-index: 10;           /* 浮在最上層 */
+}
+
+.美術圖:hover img {
+    object-fit: contain;     /* 顯示完整圖片 */
+    background-color: rgba(0, 0, 0, 0); /* 填補留白 */
+}
 @keyframes fedIup {
     from {
         opacity: 0;
@@ -309,6 +350,16 @@ section {
     justify-content: center;
     background-color: rgb(44, 44, 62); /* 可選：作為備用背景 */
 }
+#art{
+    padding-top:10px;
+    padding-bottom:100px;
+    height: 3668px;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #3f3f55;
+    color: white;
+}
+
 #GameInformation::before {
     content: "";
     position: absolute;
@@ -360,6 +411,8 @@ section {
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 50px 0;
+    height: 300px;
+    padding: 10px 0;
     background-color: rgb(34, 34, 53);
 }
+

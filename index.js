@@ -2,6 +2,7 @@ let currentSlide = 0;
 const imageSlides = document.querySelectorAll('.解說圖片 .carousel-slide img');
 const textSlides = document.querySelectorAll('.解說文字 .carousel-slide .caption');
 
+
 function showSlide(index) {
     const totalSlides = imageSlides.length;
 
@@ -50,6 +51,13 @@ function Change_pictures(){
         currentImage = 1;
     }
 }
+document.addEventListener('click', function () {
+    const audio = document.getElementById('meowSound');
+    audio.currentTime = 0; // 每次都從頭播放
+    audio.playbackRate = 3;
+    audio.play();
+});
+
 const Navigation =document.querySelector('.navbar');
 window.addEventListener('scroll', () =>{
     Navigation.classList.toggle('navaft',window.scrollY>100);
