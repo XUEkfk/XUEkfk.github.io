@@ -204,6 +204,23 @@ nav a {
     border-radius: 20px; /* 可選：讓遮罩更有圓角感 */
     background-color: rgba(118, 109, 142, 0.7);
 }
+
+
+.美術圖{
+    position: relative;
+    height: 700px;
+    width: 700px;
+    background: #1a1a5a;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.美術圖 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .button-row button{
     color: rgba(255, 255, 255, 0.51);
     font-size: 70px;
@@ -354,6 +371,23 @@ section {
 
     padding: 12px 24px;
     z-index: 5;
+}
+#art{
+    width: 100%;
+    height: 4668px;
+    background: #2c2c3e;
+
+}
+
+#圖文排列 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#圖文排列2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; /* 👈 加這行會左右顛倒排列順序 */
 }
 #footer{
     display: flex;
